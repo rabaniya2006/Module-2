@@ -28,8 +28,21 @@ To write a Python program that generates **Pascal's Triangle** using numbers. Th
 
 ## 🧪 Program
 Add Code Here
+```
+import math
 
+rows = int(input("Enter number of rows: "))
+
+for i in range(rows):
+    print(' ' * (rows - i), end='')
+    for j in range(i + 1):
+        print(math.comb(i, j), end=' ')
+    print()
+
+```
 ## Sample Output
+<img width="412" height="287" alt="image" src="https://github.com/user-attachments/assets/3ed0dc30-be2f-4ea5-a020-1bf7dae3093d" />
 
 ## Result
+The program successfully prints the Pascal’s Triangle for any number of rows entered by the user. Each row shows the correct binomial coefficients, forming a symmetric triangle.
 
